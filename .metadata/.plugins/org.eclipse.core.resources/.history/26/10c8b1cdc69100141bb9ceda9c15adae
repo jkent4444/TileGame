@@ -1,0 +1,5 @@
+package model.spacecraft.grid;
+
+public class Compartment {
+
+}

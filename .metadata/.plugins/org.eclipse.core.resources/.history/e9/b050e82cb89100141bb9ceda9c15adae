@@ -1,0 +1,6 @@
+
+public class Planet {
+	public double Gravity;
+	public String name;
+	public int type;
+}

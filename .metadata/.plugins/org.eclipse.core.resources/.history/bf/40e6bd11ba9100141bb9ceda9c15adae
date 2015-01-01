@@ -1,0 +1,10 @@
+import satellite.Planet;
+import satellite.Sun;
+
+
+public class Solarsystem {
+	private Planet[] Planets;
+	private Sun[] Suns;
+	private AsteroidBelt[] AsteroidBelts;
+	
+}

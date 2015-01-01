@@ -1,0 +1,11 @@
+package test;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import Solarsystem;
+
+public class test1  {
+	@Test
+	public void test11(){
+		Solarsystem sol = new Solarsystem();
+	}
+}

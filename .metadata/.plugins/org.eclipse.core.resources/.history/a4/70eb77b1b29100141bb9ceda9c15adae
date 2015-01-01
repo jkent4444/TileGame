@@ -1,0 +1,7 @@
+
+public class SatelliteMaths {
+	
+	public double OrbitalSpeedVelocity(double G, int Mcentral, double radius) {
+		return  Math.sqrt((G + (double) Mcentral)/ (double) radius);
+	}
+}
