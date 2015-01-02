@@ -1,0 +1,22 @@
+package model.satellite;
+
+public class Sun extends Satellite {
+	public double Gravity;
+	public double Mass;
+
+	public Sun() {
+		new Satellite();
+		this.canOrbit = false;
+	}
+	
+	public Sun(Point position, double radius, double velocity, double Gravity,
+			double Mass) {
+		new Satellite(position, radius, velocity);
+	}
+	
+	public void Satellite(Point position, double radius, double velocity){
+		this.position = position;
+		this.radius = radius;
+		this.velocity = velocity;
+	}
+}

@@ -1,0 +1,21 @@
+package model.satellite;
+
+/**
+ * @author John Kent
+ *
+ */
+public class Satellite {
+	private Point position;
+	public int type;
+	public double radius;
+	public double velocity;
+	public boolean canOrbit;
+	
+	/**
+	 * Assigns default satellite to point
+	 * 
+	 */
+	public Satellite() {
+		position = new Point(0,0);
+	}
+}

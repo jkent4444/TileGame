@@ -1,0 +1,10 @@
+package model.satellite;
+
+public class Sun extends Satellite {
+	
+	
+	public Sun() {
+		this.canOrbit = false;
+		Satellite();
+	}
+}

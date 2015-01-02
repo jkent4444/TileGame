@@ -25,3 +25,7 @@
 1420122849723	Move compilation unit
 1420123991753	Delete element
 1420124376880	Delete element
+1420183219542	Rename package 'model.spacecraft.crew'
+1420183314497	Rename package 'model.spacecraft.compartment'
+1420183454398	Rename package 'model.spacecraft.equipment'
+1420183509603	Rename type 'compartment'

@@ -1,0 +1,25 @@
+package model.satellite;
+
+/** 
+ * defines a Planet which extends a Satellite
+ * 
+ * where type > 0 and Gravity > 0
+ * @author John
+ *
+ */
+public class Planet extends Satellite {
+	public double gravity;
+	public int type;
+	
+	public Planet() {
+		new Satellite();
+		this.gravity = 1;
+		this.type = 1;
+	}
+	
+	public Planet(Point position, double radius, double velocity, double gravity, int type) {
+		new Satellite(position, radius, velocity, true);
+		this.gravity = gravity;
+		this.type = type;
+	}
+}

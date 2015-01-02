@@ -1,0 +1,11 @@
+package model.satellite;
+
+/** 
+ * defines a Planet which extends a Satellite
+ * @author John
+ *
+ */
+public class Planet extends Satellite {
+	public double Gravity;
+	public int type;
+}

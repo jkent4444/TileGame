@@ -1,0 +1,13 @@
+package model.satellite;
+import model.spacecraft.equipment.Engine;
+
+/**
+ * 
+ * @author John
+ *
+ */
+public class SpaceCraft extends Satellite {
+	private Compartment[] Compartments;
+	private Workers[] Crew;
+	public double mass;
+}

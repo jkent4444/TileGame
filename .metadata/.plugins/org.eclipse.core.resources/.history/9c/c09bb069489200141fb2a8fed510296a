@@ -1,0 +1,7 @@
+package model.satellite;
+
+public class Sun extends Satellite {
+	public Sun() {
+		
+	}
+}
