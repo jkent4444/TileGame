@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;Menus&apos; to &apos;menus&apos;&#x0D;&#x0A;- Original project: &apos;SpaceShipGame&apos;&#x0D;&#x0A;- Original element: &apos;SpaceShipGame/src/Menus&apos;&#x0D;&#x0A;- Renamed element: &apos;SpaceShipGame/src/menus&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;Menus&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;Menus" name="menus" qualified="false" references="true" stamp="1420972074209" textual="false" version="1.0"/>
+</session>

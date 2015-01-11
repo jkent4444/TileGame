@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;libGDX/DesktopStarter.java&apos; to &apos;Main&apos;" description="Rename resource &apos;DesktopStarter.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="DesktopStarter.java" name="Main" stamp="1420394337429" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;libGDX/Main&apos; to &apos;Main.java&apos;" description="Rename resource &apos;Main&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Main" name="Main.java" stamp="1420394349771" updateReferences="true"/>
+</session>

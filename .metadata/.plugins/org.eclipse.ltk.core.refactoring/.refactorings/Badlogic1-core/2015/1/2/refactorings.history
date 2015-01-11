@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;goat.so.Main.java&apos; to &apos;Blackpoint2.java&apos;&#x0D;&#x0A;- Original project: &apos;Badlogic1-core&apos;&#x0D;&#x0A;- Original element: &apos;goat.so.Main.java&apos;&#x0D;&#x0A;- Renamed element: &apos;goat.so.Blackpoint2.java&apos;" description="Rename compilation unit &apos;Main.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;goat.so{Main.java" name="Blackpoint2.java" references="false" stamp="1420398262234" version="1.0"/>
+</session>

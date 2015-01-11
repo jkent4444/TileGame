@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;goat.so.desktop.DesktopLauncher.java&apos; to &apos;Main.java&apos;&#x0D;&#x0A;- Original project: &apos;Badlogic1-desktop&apos;&#x0D;&#x0A;- Original element: &apos;goat.so.desktop.DesktopLauncher.java&apos;&#x0D;&#x0A;- Renamed element: &apos;goat.so.desktop.Main.java&apos;" description="Rename compilation unit &apos;DesktopLauncher.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;goat.so.desktop{DesktopLauncher.java" name="Main.java" references="false" stamp="1420397996493" version="1.0"/>
+</session>

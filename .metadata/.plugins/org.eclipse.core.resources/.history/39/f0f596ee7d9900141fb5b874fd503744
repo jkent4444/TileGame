@@ -1,0 +1,21 @@
+package menus;
+
+import java.awt.*;
+import javax.swing.JFrame;
+
+public class Screen {
+	
+	//your GPU
+	private GraphicsDevice vc;
+	
+	public Screen() {
+		//environment objects controls the graphics settings not just screen
+		GraphicsEnvironment env = 
+				GraphicsEnvironment.getLocalGraphicsEnvironment();
+		
+		//gets access from screen
+		vc = env.getDefaultScreenDevice();
+		
+	}
+	
+}

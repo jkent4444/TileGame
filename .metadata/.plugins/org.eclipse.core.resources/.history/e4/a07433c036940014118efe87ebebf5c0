@@ -1,0 +1,34 @@
+public class Basic3DTest implements ApplicationListener {
+    @Override
+    public void create () {
+    	//field of view 67 aspect also set to width and height
+    	cam = new PerspectiveCamera(67, Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+    	
+    	//sets the camera to 10 back 10 right 10 up
+    	cam.position.set(10f, 10f, 10f);
+    	cam.lookAt(0,0,0);
+    	cam.near = 1f;
+    	cam.far = 300f;
+    	cam.update();
+    }
+ 
+    @Override
+    public void render () {
+    }
+     
+    @Override
+    public void dispose () {
+    }
+     
+    @Override
+    public void resume () {
+    }
+ 
+    @Override
+    public void resize (int width, int height) {
+    }
+ 
+    @Override
+    public void pause () {
+    }
+}

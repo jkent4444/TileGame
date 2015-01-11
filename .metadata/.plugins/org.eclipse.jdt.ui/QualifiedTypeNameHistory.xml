@@ -2,4 +2,17 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="spacecraftequipment.Engine"/>
 <fullyQualifiedTypeName name="model.npc"/>
+<fullyQualifiedTypeName name="model.satellite.Point"/>
+<fullyQualifiedTypeName name="goat.so.Blackpoint2"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.PerspectiveCamera"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g3d.utils.ModelBuilder"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g3d.ModelInstance"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g3d.Model"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g3d.Material"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g3d.attributes.ColorAttribute"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.VertexAttributes.Usage"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Color"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g3d.ModelBatch"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.assets.loaders.ModelLoader"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g3d.loader.ObjLoader"/>
 </qualifiedTypeNameHistroy>

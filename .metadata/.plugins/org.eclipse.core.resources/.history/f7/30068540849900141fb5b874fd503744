@@ -1,0 +1,11 @@
+package menus;
+import java.awt.*;
+import javax.swing.JFrame;
+
+public class MainScreen extends JFrame {
+	public static void main(String[] args) {
+		
+		DisplayMode dm = new DisplayMode(800, 600, 16, DisplayMode.REFRESH_RATE_UNKNOWN);
+	}
+		
+}
