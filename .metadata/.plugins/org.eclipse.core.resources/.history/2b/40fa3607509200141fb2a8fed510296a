@@ -1,7 +1,0 @@
-package model.spacecraft.compartment;
-
-import model.npc;
-
-public class pilot extends npc {
-	
-}

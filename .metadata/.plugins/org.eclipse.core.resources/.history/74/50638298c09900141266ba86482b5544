@@ -1,0 +1,9 @@
+package model;
+
+public class GameScreen {
+	public static void main(String args[]) {
+		GameScreen gs = new GameScreen();
+		gs.run();
+	}
+}
+

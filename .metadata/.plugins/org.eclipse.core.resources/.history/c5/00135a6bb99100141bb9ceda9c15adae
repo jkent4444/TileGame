@@ -1,7 +1,0 @@
-import spacecraftequipment.Engine;
-
-
-public class SpaceCraft extends Satellite {
-	public Engine[] engines;
-	public double mass;
-}

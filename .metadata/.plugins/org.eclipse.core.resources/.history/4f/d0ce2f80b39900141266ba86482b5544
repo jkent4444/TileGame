@@ -1,0 +1,50 @@
+package model;
+
+import java.awt.Image;
+import java.util.ArrayList;
+
+public class Animation {
+	//scenes in animation
+	private ArrayList scenes;
+	
+	//current scene
+	private int sceneIndex;
+	
+	//total time animation has run
+	private long movieTime;
+	
+	//current time of animation
+	private long totalTime;
+	
+	/**
+	 * Constructor function
+	 */
+	private Animation() {
+		scenes = new ArrayList();
+		totalTime = 0;
+		start();
+	}
+	
+	//start animation from begining
+	private synchronized void start() {
+		movieTime = 0;
+		sceneIndex = 0;
+		
+	}
+	
+	//add scene to ArrayList and set time for each scene
+	public synchronized void addScene(Image i, long t) {
+			totalTime += t;
+			scenes.add(new OneScene(i, totalTime));
+		
+	}
+	
+	public synchronized void update(long timePassed){
+		if(scenes.size() > 1){
+			movieTime += timePassed;
+			if(movieTime >= totalTime){
+				
+			}
+		}
+	}
+}

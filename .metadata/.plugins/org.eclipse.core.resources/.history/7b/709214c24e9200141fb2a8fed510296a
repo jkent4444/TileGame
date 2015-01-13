@@ -1,6 +1,0 @@
-package model.satellite;
-
-public class Planet {
-	public double Gravity;
-	public int type;
-}

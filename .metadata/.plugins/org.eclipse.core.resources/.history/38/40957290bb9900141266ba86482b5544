@@ -1,0 +1,31 @@
+package model;
+import java.awt.*;
+import java.awt.image.BufferStrategy;
+
+public class ScreenManager {
+	private GraphicsDevice vc;
+	
+	//give vc access to monitor screen
+	public ScreenManager() {
+		//gets graphics details
+		GraphicsEnvironment e = GraphicsEnvironment.getLocalGraphicsEnvironment();
+		vc = e.getDefaultScreenDevice();
+	}
+	
+	//get all compatible display modes
+	public DisplayMode[] getCompatibleDisplayModes() {
+		return vc.getDisplayModes();
+	}
+	
+	//compares display modes passed in to vc display modes and see if they match
+	public DisplayMode findFirstCompatibleMode(DisplayMode modes[]) {
+		DisplayMode goodModes[] = vc.getDisplayModes();
+		for(int x = 0; x < modes.length; x++) {
+			for(int y = 0; y < goodModes.length; y++) {
+				if(displayModesMatch(modes[x], goodModes[y])){
+					return modes[x];
+				}
+			}
+		}
+	}
+}

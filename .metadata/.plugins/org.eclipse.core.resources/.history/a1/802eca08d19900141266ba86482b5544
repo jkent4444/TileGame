@@ -1,0 +1,81 @@
+package model;
+
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Point;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
+
+public class Look extends Core implements MouseMotionListener, KeyListener {
+	public static void main(String[] args) {
+		new Look().run();
+	}
+	private Image bg;
+	private Robot robot;
+	private Point mouse;
+	private Point center;
+	private Point image;
+	private boolean centering;
+	
+	public void init() {
+		super.init();
+		mouse = new Point();
+		center = new Point();
+		image = new Point();
+		centering = false;
+		
+		try {
+			robot = new Robot();
+			recenterMouse();
+			mouse.x = center.x;
+			mouse.y = center.y;
+		}catch (Exception ex) {
+			System.out.println("Exception 1");
+		}
+	}
+	
+	@Override
+	public void keyPressed(KeyEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyReleased(KeyEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		int keyCode = e.getKeyCode();
+		if(keyCode == KeyEvent.VK_ESCAPE) {
+			stop();
+		} else {
+			e.consume();
+		}
+		
+	}
+
+	@Override
+	public void mouseDragged(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseMoved(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void draw(Graphics2D g) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

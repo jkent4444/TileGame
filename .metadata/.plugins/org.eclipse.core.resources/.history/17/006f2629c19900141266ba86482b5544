@@ -1,0 +1,24 @@
+package model;
+
+import java.awt.DisplayMode;
+
+public class GameScreen {
+	public static void main(String args[]) {
+		GameScreen gs = new GameScreen();
+		gs.run();
+	}
+	
+	private Animation a;
+	private ScreenManager s;
+	private Image bg;
+	
+	private static final DisplayMode modes1[] = {
+		new DisplayMode(800, 600, 32, 0),
+		new DisplayMode(800, 600, 24, 0),
+		new DisplayMode(800, 600, 16, 0),
+		new DisplayMode(1900, 1080, 32, 0),
+		new DisplayMode(1900, 1080, 24, 0),
+		new DisplayMode(1900, 1080, 16, 0),
+	};
+}
+

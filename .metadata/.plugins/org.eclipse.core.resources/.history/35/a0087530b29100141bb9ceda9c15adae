@@ -1,7 +1,0 @@
-
-public class SatelliteMaths {
-	
-	public int OrbitalSpeedVelocity(double G, int Mcentral, double radius) {
-		return 	
-	}
-}

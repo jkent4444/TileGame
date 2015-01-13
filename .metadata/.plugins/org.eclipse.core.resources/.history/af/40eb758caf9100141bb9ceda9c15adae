@@ -1,9 +1,0 @@
-
-public class Satellite {
-	private Point position;
-	public int type;
-	
-	public Satellite() {
-		position = new Point(0,0)
-	}
-}

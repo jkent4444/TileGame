@@ -1,8 +1,0 @@
-package model.satellite;
-import spacecraft.equipment.Engine;
-
-
-public class SpaceCraft extends Satellite {
-	private Engine[] engines;
-	public double mass;
-}

@@ -1,0 +1,25 @@
+package model;
+
+import java.util.ArrayList;
+
+public class Animation {
+	private ArrayList scenes;
+	private int sceneIndex;
+	private long movieTime;
+	private long totalTime;
+	
+	private Animation() {
+		scenes = new ArrayList();
+		totalTime = 0;
+		start();
+	}
+
+	private void start() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public synchronized void addScene(Image i, long t) {
+		
+	}
+}

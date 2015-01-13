@@ -11,6 +11,7 @@ public class Satellite {
 	public double radius;
 	public double velocity;
 	public boolean canOrbit;
+	public double acceleration;
 	
 	/**
 	 * Assigns default satellite to point
@@ -33,5 +34,14 @@ public class Satellite {
 		this.radius = radius;
 		this.velocity = velocity;
 		this.canOrbit = canOrbit;
+		this.acceleration = 0;
+	}
+	
+	public void changeVelocity(double velocity) {
+		this.velocity = velocity;
+	}
+	
+	public boolean isAccelerating(){
+		return acceleration == 0;
 	}
 }

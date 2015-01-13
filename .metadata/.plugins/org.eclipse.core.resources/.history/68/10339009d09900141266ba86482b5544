@@ -1,0 +1,56 @@
+package model;
+
+import java.awt.Graphics2D;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
+
+public class Look extends Core implements MouseMotionListener, KeyListener {
+	public static void main(String[] args) {
+		new Look().run();
+	}
+	@Override
+	public void keyPressed(KeyEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyReleased(KeyEvent arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void keyTyped(KeyEvent arg0) {
+		int keyCode = e.getKeyCode();
+		if(keyCode == KeyEvent.VK_ESCAPE) {
+			stop();
+		} else {
+			mess = "Pressed : " + KeyEvent.getKeyText(keyCode);
+			//disallows multiple key presses such as alt+f
+			e.consume();
+		}
+		
+	}
+
+	@Override
+	public void mouseDragged(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseMoved(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void draw(Graphics2D g) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

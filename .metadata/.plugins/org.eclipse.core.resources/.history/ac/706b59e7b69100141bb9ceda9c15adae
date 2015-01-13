@@ -1,5 +1,0 @@
-
-public class Tragectory {
-	public List<int, dimensions> flightPath;
-	
-}

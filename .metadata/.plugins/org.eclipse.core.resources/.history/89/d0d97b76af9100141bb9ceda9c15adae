@@ -1,7 +1,0 @@
-
-public class Satellite {
-	private Point position;
-	public int type;
-	
-	
-}

@@ -1,5 +1,0 @@
-
-public class Solarsystem {
-	private List<Planet> Planets;
-	private List<Sun> Suns;
-}
