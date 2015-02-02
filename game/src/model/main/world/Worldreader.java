@@ -1,5 +1,6 @@
 package model.main.world;
 
+import java.awt.Point;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,7 +18,7 @@ public class Worldreader {
 		String line = "";
 		String[] lineArray;
 		String[] tileDetails;
-		int lineNumber = 0;
+		int lineNumber = 1;
 		int width = 0;
 		
 		while(in.hasNextLine()) {
@@ -25,23 +26,25 @@ public class Worldreader {
 			lineArray = line.split(" ");
 			
 			//check and set the width of each line
-			if(lineNumber == 0) {
+			if(lineNumber == 1) {
 				width = lineArray.length;
 			} else {
 				if(lineArray.length != width) {
 					throw new FileFormatException(); 
 				}
 			}
+			System.out.println(width);
 			
 			//check if contents of entries are correct
 			for(int i = 0; i < lineArray.length; i++) {
 				System.out.println(lineArray[i].toString());
 				if(lineArray[i].contains(":")) {
 					tileDetails = lineArray[i].split(":");
-					if(tileDetails == null || tileDetails.length != 2) {
+					if(tileDetails.length == 2) {
 						try{
-							//Integer.parseInt(tileDetails[0]);
-							//Integer.parseInt
+							worldTile.add(new Tile(new Point(), 
+									tileType.Integer.parseInt(tileDetails[0]), Integer.parseInt(tileDetails[1]));
+							;
 						} catch(Exception e) {
 							throw new FileFormatException();
 						}
@@ -52,6 +55,7 @@ public class Worldreader {
 					throw new FileFormatException();
 				}
 			}
+			lineNumber++;
 		}
 		return worldTile;
 	}
