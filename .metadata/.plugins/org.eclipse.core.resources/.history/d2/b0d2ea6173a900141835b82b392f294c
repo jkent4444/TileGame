@@ -1,0 +1,26 @@
+package model.main.world;
+
+import java.awt.Point;
+import java.util.ArrayList;
+
+public class World {
+	private ArrayList<Tile> worldTiles;
+	private int length;
+	private int width;
+	
+	public void world() {
+		this.length = 1;
+		this.width = 1;
+		createTiles(1,1);
+	}
+	
+	private void createTiles(int x, int y) throws Exception {
+		
+		for(int i = 0; i < x; i++) {
+			for(int c = 0; c < y; c++) {				
+					worldTiles.add(i+c, new Tile(new Point(i,c), tileType.floor));		
+			}
+		}
+		
+	}
+}

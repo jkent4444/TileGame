@@ -1,0 +1,16 @@
+package model.test;
+
+import static org.junit.Assert.assertEquals;
+import model.main.world.World;
+
+import org.junit.Test;
+
+public class Worldtests {
+	@Test
+	public void testTileType() throws Exception {
+		World w1 = new World();
+		
+		assetEquals();
+		
+	}
+}

@@ -1,0 +1,22 @@
+package model.world;
+
+import java.util.ArrayList;
+
+public class world {
+	private ArrayList<tile> worldTiles;
+	private int length;
+	private int width;
+	private double x;
+	private double y;
+	
+	public void world() {
+		this.x = 1.0;
+		this.y = 1.0;
+		this.worldTiles = createTiles(1,1);
+	}
+	
+	public ArrayList<tile> createTiles(int x, int y) {
+		
+		return null;
+	}
+}

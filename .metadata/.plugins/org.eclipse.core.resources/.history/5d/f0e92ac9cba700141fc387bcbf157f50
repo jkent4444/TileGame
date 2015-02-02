@@ -1,0 +1,12 @@
+package model;
+
+import controller.Controller;
+
+public class Main {
+	private Model model;
+	private Controller controller;
+	
+	public static void main(String args[]) {
+	    
+	}
+}

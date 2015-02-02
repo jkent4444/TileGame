@@ -1,0 +1,10 @@
+package model.world.objects;
+
+public class stackableItem extends Item {
+	private boolean isStackable;
+	private int stackSize;
+	
+	public void stableItem(int stackSize) {
+		this.stackSize = stackSize;
+	}
+}

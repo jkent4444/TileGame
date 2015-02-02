@@ -1,0 +1,22 @@
+package model.world.objects;
+
+public class Item {
+	private String name;
+	private boolean holdable;
+	private boolean dropable;
+	private boolean isNull;
+	
+	public Item() {
+		
+	}
+	public void nullItem() {
+		this.holdable = true;
+		this.dropable = false;
+		this.isNull = true;
+		this.name = "null";	
+	}
+	
+	public void isNull() {
+		return isNull;
+	}
+}

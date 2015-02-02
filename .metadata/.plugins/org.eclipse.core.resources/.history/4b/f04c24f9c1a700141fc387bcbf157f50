@@ -1,0 +1,6 @@
+package model.world.objects;
+
+public class gameObject {
+	public double x;
+	public double y;
+}

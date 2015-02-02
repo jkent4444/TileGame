@@ -1,0 +1,57 @@
+package model.main.world;
+
+import java.awt.Point;
+
+/**
+ * Is a object that exists in a world that 
+ * holds the display type and characteristics of 
+ * a position
+ * @author John
+ *
+ */
+public class Tile {
+	private Point position;
+	private tileType type;
+	private TileDecorator pattern;
+	
+	/**
+	 * creates a Tile at position of type
+	 * @param position, is position of the tile
+	 * @param type, holds different statistics for tiles
+	 * @throws Exception position out of bounds
+	 */
+	public Tile(Point position, tileType type) throws Exception {
+		setPosition(position);
+		this.type = type;
+	}
+	
+	public Tile(Point position, tileType type, TileDecorator pattern) throws Exception {
+		setPosition(position);
+		this.type = type;
+		if(pattern.getType() == type) {
+			this.pattern = pattern;
+		} else {
+			throw new Exception("Incorrect pattern for type");
+		}
+	}
+	
+	public void setPosition(Point position) throws Exception {
+		if(position.x < 0 || position.y < 0) {
+			throw new Exception("Position given out of bounds");
+		} else {
+			this.position = position;
+		}
+	}
+	
+	public void setType(tileType type) {
+		this.type = type;
+	}
+	
+	public Point getPositon() {
+		return this.position;
+	}
+	
+	public tileType getTileType() {
+		return this.type;
+	}
+}

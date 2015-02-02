@@ -1,0 +1,12 @@
+package model.world.objects;
+
+import java.util.ArrayList;
+
+public class Bag {
+	private ArrayList<Item> Items;
+	private int bagSize;
+	
+	public void setBag(int bagSize) {
+		this.bagSize = bagSize;
+	}
+}

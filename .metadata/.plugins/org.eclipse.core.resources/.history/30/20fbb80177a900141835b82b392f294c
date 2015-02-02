@@ -1,0 +1,20 @@
+package model.test;
+
+import static org.junit.Assert.assertEquals;
+
+import java.awt.Point;
+
+import model.main.world.World;
+import model.main.world.tileType;
+
+import org.junit.Test;
+
+public class Worldtests {
+	@Test
+	public void testTileType() throws Exception {
+		World w1 = new World(1,1);
+		
+		assertEquals(w1.getTileList().get(0).getTileType(), tileType.floor);
+		assertEquals(w1.getTileList().get(0).getPositon(), new Point(0,0));		
+	}
+}

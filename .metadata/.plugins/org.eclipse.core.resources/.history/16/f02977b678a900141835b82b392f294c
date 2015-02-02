@@ -1,0 +1,11 @@
+package model.main.world;
+
+import java.util.ArrayList;
+
+public class Worldreader {
+	private ArrayList<Tile> worldTile;
+	
+	public static ArrayList<Tile> worldreader(String filename) {
+		return null;
+	}
+}

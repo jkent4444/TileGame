@@ -1,0 +1,25 @@
+package model.main.world;
+
+import java.util.ArrayList;
+
+public class World {
+	private ArrayList<Tile> worldTiles;
+	private int length;
+	private int width;
+	
+	public void world() {
+		this.length = 1;
+		this.width = 1;
+		this.worldTiles = createTiles(1,1);
+	}
+	
+	public ArrayList<Tile> createTiles(int x, int y) {
+		
+		for(int i = 0; i < x; i++) {
+			for(int c = 0; c < y; c++) {
+				
+			}
+		}
+		return null;
+	}
+}

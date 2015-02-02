@@ -1,0 +1,17 @@
+1422539342813	Move compilation units
+1422539357367	Delete element
+1422539362150	Move compilation unit
+1422539366495	Move compilation unit
+1422540409811	Delete element
+1422540444675	Delete element
+1422540516967	Delete element
+1422540529392	Rename type 'world'
+1422540542776	Rename type 'tile'
+1422540880034	Rename type 'object'
+1422540889881	Rename type 'item'
+1422542509148	Delete element
+1422726823003	Rename type 'worldtests'
+1422729723073	Rename resource 'tilemap1'
+1422729900735	Delete element
+1422730183176	Encapsulate field 'index'
+1422730190325	Encapsulate field 'type'

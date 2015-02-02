@@ -1,0 +1,7 @@
+package model.main.world.objects;
+
+public class gameObject extends Item {
+	public double x;
+	public double y;
+	public boolean canCollected;
+}

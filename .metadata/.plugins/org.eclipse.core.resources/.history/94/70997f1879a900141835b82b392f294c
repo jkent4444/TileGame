@@ -1,0 +1,11 @@
+package model.main.world;
+
+public enum tileType {
+	floor (0),
+	wall (1);
+	
+	private int index;
+	public tileType(int index) {
+		this.index = index;
+	}
+}

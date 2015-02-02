@@ -1,0 +1,22 @@
+package model.main.world;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Worldreader {
+	private static ArrayList<Tile> worldTile;
+	
+	public static ArrayList<Tile> worldreader(String filename) {
+		try {
+			FileReader tilereader = new FileReader(filename); 
+			BufferedReader bufferedreader = new BufferedReader(tilereader);
+		} catch(Exception e) {
+			System.out.println("Error while reading file" + e.getMessage());
+		}
+		
+		return worldTile;
+	}
+}

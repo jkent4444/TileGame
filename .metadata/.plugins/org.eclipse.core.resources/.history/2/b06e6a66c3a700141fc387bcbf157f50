@@ -1,0 +1,13 @@
+package model.world.objects;
+
+public class Item {
+	private String name;
+	private boolean holdable;
+	private boolean dropable;
+	
+	public void emptyItem() {
+		this.holdable = true;
+		this.dropable = false;
+		this.name = "empty";		
+	}
+}

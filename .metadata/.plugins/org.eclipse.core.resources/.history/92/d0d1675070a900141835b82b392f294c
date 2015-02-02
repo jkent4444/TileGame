@@ -1,0 +1,21 @@
+package model.test;
+
+
+import java.awt.Point;
+
+import model.main.world.Tile;
+import model.main.world.tileType;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class Tiletests {
+	
+	@Test
+	public void testTileType() {
+		Tile t1 = new Tile(new Point(0,0), tileType[0]);
+		
+		//assertEquals("onetwo", result);
+	}
+}

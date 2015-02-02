@@ -1,0 +1,13 @@
+package model.main.world;
+
+public enum TileDecorator {
+	grass(0,tileType.floor);
+	dirt(1,);
+	stone(2,1);
+	rocks(3,1);
+	
+	private tileType type;
+	private int index;
+	
+	
+}

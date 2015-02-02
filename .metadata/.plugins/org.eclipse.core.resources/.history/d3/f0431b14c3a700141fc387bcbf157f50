@@ -1,0 +1,7 @@
+package model.world.objects;
+
+public class Item {
+	private boolean holdable;
+	private boolean dropable;
+	
+}

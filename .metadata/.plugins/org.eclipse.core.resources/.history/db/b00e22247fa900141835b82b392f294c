@@ -1,0 +1,51 @@
+package model.main.world;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Worldreader {
+	private static ArrayList<Tile> worldTile;
+	
+	public static ArrayList<Tile> worldreader(String filename) {
+		worldTile = new ArrayList<Tile>();
+		File file = new File(filename);
+		String line;
+		int cursor = 0;
+		int state = 0;
+		char pointer;
+		String pointerStack;
+		int type;
+
+	    try {
+
+	        Scanner sc = new Scanner(file);
+
+	        while (sc.hasNext()) {
+	            line = sc.next();
+	            pointerStack = "";
+	            for(int i = 0; i < line.length(); i++) {
+	            	pointer = line.charAt(i);
+	            	if(((int)pointer >= 0 || (int) pointer <= 9) && state == 0) {
+	            		pointerStack += pointer;
+	            	}
+	            	if(pointer == 58) {
+	            		type = Integer.parseInt(pointerStack);
+	            		pointerStack = "";
+	            		state += 1;
+	            	}
+	            }
+	        }
+	        sc.close();
+	    } 
+	    catch (FileNotFoundException e) {
+	        e.printStackTrace();
+	    }
+	 }
+		
+		return worldTile;
+	}
+}

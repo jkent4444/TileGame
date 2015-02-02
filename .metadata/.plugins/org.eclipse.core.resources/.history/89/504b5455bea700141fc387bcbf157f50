@@ -1,0 +1,6 @@
+package model.world;
+
+public enum tileType {
+	floor,
+	wall
+}

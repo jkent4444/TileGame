@@ -1,0 +1,29 @@
+package model.main.world;
+
+import java.awt.Point;
+
+public class Tile {
+	private Point position;
+	private tileType type;
+	
+	public void Tile(Point position, tileType type) {
+		this.position = position;
+		this.type = type;
+	}
+	
+	public void setPosition(Point position) {
+		this.position = position;
+	}
+	
+	public void setType(tileType type) {
+		this.type = type;
+	}
+	
+	public Point getPositon() {
+		return this.position;
+	}
+	
+	public tileType getTileType() {
+		return this.type;
+	}
+}

@@ -1,0 +1,5 @@
+package model.world.objects;
+
+public class Bag {
+	private ArrayList<Item> 
+}

@@ -1,0 +1,5 @@
+package model.main.world;
+
+public class Tiledisplay {
+
+}

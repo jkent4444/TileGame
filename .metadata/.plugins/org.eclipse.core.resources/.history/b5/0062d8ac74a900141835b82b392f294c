@@ -1,0 +1,56 @@
+package model.main.world;
+
+import java.awt.Point;
+import java.util.ArrayList;
+
+public class World {
+	private ArrayList<Tile> worldTiles;
+	private int length;
+	private int width;
+	
+	public void world() throws Exception {
+		this.length = 1;
+		this.width = 1;
+		createTiles(1,1);
+	}
+	
+	/**
+	 * 
+	 * @param x
+	 * @param y width
+	 * @throws Exception may go out of bounds
+	 */
+	private void createTiles(int length, int width) throws Exception {	
+		for(int i = 0; i < x; i++) {
+			for(int c = 0; c < y; c++) {				
+					worldTiles.add(i+c, new Tile(new Point(i,c), tileType.floor));		
+			}
+		}		
+	}
+	
+	public void loadTiles(String filename) {};
+	
+	/**
+	 * updates Tile by position
+	 * @param type, type of tile
+	 * @param position, position of tile
+	 */
+	private void updateTile(tileType type, Point position) {};
+	
+	
+	public void changeLength(int length) {
+		this.length = length;
+	}
+	
+	public void changeWidth(int width) {
+		this.width = width;
+	}
+	
+	public int getLength() {
+		return this.length;
+	}
+	
+	public int getWidth() {
+		return this.width;
+	}
+}

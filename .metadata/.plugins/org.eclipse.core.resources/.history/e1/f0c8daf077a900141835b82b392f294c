@@ -1,0 +1,39 @@
+package model.test;
+
+import static org.junit.Assert.assertEquals;
+
+import java.awt.Point;
+
+import model.main.world.World;
+import model.main.world.tileType;
+
+import org.junit.Test;
+
+public class Worldtests {
+	@Test
+	public void testTileType() throws Exception {
+		World w1 = new World(1,1);
+		
+		assertEquals(w1.getTileList().get(0).getTileType(), tileType.floor);
+		assertEquals(w1.getTileList().get(0).getPositon(), new Point(0,0));		
+	}
+	
+	public void testMultiTileType() throws Exception {
+		World w1 = new World(2,1);
+		
+		assertEquals(w1.getTileList().get(1).getTileType(), tileType.floor);
+		assertEquals(w1.getTileList().get(1).getPositon(), new Point(0,0));		
+	}
+	
+	public void testChangeSingleType() throws Exception {
+		World w1 = new World(1,1);
+		w1.updateTile(tileType.wall, new Point(0,0));
+		assertEquals(w1.getTileList().get(0).getTileType(), tileType.wall);	
+	}
+	
+	public void testChangeMultiType() throws Exception {
+		World w1 = new World(2,2);
+		w1.updateTile(tileType.wall, new Point(0,0));
+		assertEquals(w1.getTileList().get(0).getTileType(), tileType.wall);	
+	}
+}

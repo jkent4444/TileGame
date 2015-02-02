@@ -1,0 +1,34 @@
+package model.main.world;
+
+import java.awt.Point;
+
+public class Tile {
+	private Point position;
+	private tileType type;
+	
+	public Tile(Point position, tileType type) {
+		setPosition(position);
+		this.type = type;
+	}
+	
+	public void setPosition(Point position) throws Exception {
+		try{
+			
+		}catch (Exception e) {
+			throw new Exception(e);
+		}
+		this.position = position;
+	}
+	
+	public void setType(tileType type) {
+		this.type = type;
+	}
+	
+	public Point getPositon() {
+		return this.position;
+	}
+	
+	public tileType getTileType() {
+		return this.type;
+	}
+}

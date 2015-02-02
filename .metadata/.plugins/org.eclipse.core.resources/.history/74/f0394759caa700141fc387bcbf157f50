@@ -1,0 +1,43 @@
+package model.world.objects;
+
+import java.util.ArrayList;
+
+public class Bag {
+	private ArrayList<Object> Items;
+	private int bagSize;
+	
+	public void setBag(int bagSize) {
+		Item item;
+		this.bagSize = bagSize;
+		for(int i = 0; i < bagSize; i++) {
+			item = new Item();
+			item.nullItem();
+			Items.add(item);
+		}
+	}
+	
+	public void addItem(Item item) {
+		Items.add(getNextNullItem(), item);
+	}
+	
+	public void addItem(int position, Item item) {
+		if( ((Item) Items.get(position)).getType() == -1) {
+			Items.set(position, item);
+		} 
+	}
+	
+	public void addItem(int position, Item item, int num) {
+		if(((stackableItem) Items.get(position)).getType() == 2) {
+			
+		}
+	}
+	
+	public int getNextNullItem() {
+		for(int i = 0; i < bagSize; i++) {
+			if(((Item) Items.get(i)).getType() == 0) {
+				return i;
+			}
+		}
+		return -1;
+	}
+}

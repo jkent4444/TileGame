@@ -1,0 +1,10 @@
+package model;
+
+public class Main {
+	private Model;
+	private Controller;
+	
+	public static void main(String args[]) {
+	    
+	}
+}

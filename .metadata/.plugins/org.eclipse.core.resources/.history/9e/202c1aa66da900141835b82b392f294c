@@ -1,0 +1,8 @@
+package model.test;
+
+
+import org.junit.Assert.assertEquals;
+
+public class Tiletests {
+
+}
