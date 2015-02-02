@@ -11,27 +11,23 @@ import java.util.Scanner;
 public class Worldreader {
 	private static ArrayList<Tile> worldTile;
 	
-	public static ArrayList<Tile> worldreader(String filename) throws FileNotFoundException, FileFormatException {
+	public static ArrayList<Tile> worldreader(String filename, int width ,int height) throws FileNotFoundException, FileFormatException {
 		worldTile = new ArrayList<Tile>();
 		FileReader mapfile = new FileReader(filename);
 		Scanner in = new Scanner(mapfile);
 		String line = "";
 		String[] lineArray;
 		String[] tileDetails;
-		int lineNumber = 1;
-		int width = 0;
+		int lineNumber = 0;
+		int c1, c2;
 		
 		while(in.hasNextLine()) {
 			line = in.nextLine();
 			lineArray = line.split(" ");
 			
 			//check and set the width of each line
-			if(lineNumber == 1) {
-				width = lineArray.length;
-			} else {
-				if(lineArray.length != width) {
-					throw new FileFormatException(); 
-				}
+			if(lineArray.length != width) {
+				throw new FileFormatException(); 
 			}
 			System.out.println(width);
 			
@@ -42,9 +38,15 @@ public class Worldreader {
 					tileDetails = lineArray[i].split(":");
 					if(tileDetails.length == 2) {
 						try{
-							worldTile.add(new Tile(new Point(), 
-									tileType.Integer.parseInt(tileDetails[0]), Integer.parseInt(tileDetails[1]));
-							;
+							c1 = Integer.parseInt(tileDetails[0]);
+							c2 = Integer.parseInt(tileDetails[1]);
+							if(!(c1 < 0 || c2 < 0)) {
+								worldTile.add(new Tile(new Point(i,lineNumber),
+										tileType.getTileType(c1),
+										TileDecorator.getTileDecorator(c2)));
+							} else {
+								throw new Exception();
+							}
 						} catch(Exception e) {
 							throw new FileFormatException();
 						}

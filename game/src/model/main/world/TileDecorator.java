@@ -19,5 +19,14 @@ public enum TileDecorator {
 	public tileType getType() {
 		return type;
 	}
+	
+	public static TileDecorator getTileDecorator(int index) {
+		for(TileDecorator type: TileDecorator.values()) {
+			if(type.getIndex() == index) {
+				return type;
+			}
+		}
+		return null;
+	}
 
 }

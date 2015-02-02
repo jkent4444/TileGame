@@ -13,11 +13,12 @@ public enum tileType {
 		return index;
 	}
 	
-	public tileType getTileType(int index) {
-		for(int i = 0; i < tileType.values().length; i++) {
-			if(tileType.values().) {
-				
+	public static tileType getTileType(int index) {
+		for(tileType type: tileType.values()) {
+			if(type.getIndex() == index) {
+				return type;
 			}
 		}
+		return null;
 	}
 }

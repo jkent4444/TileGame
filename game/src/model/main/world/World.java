@@ -47,8 +47,8 @@ public class World {
 	 * @throws FileFormatException 
 	 * @throws FileNotFoundException 
 	 */
-	public void loadTiles(String filename) throws FileNotFoundException, FileFormatException {
-		worldTiles = Worldreader.worldreader(filename);		
+	public void loadTiles(String filename,int width, int height) throws FileNotFoundException, FileFormatException {
+		worldTiles = Worldreader.worldreader(filename, width, height);		
 	}
 	
 	/**
